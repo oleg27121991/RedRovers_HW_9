@@ -1,6 +1,6 @@
 package by.veremei.month;
 
-public class Month {
+public final class Month {
     private final String name;
     private final int day;
     private final int workingDay;

@@ -1,9 +1,9 @@
 package by.veremei.manager;
 
-import by.veremei.employee.Employee;
+import by.veremei.employee.BaseEmployee;
 import by.veremei.month.Month;
 
-public class Manager extends Employee {
+public final class Manager extends BaseEmployee {
     private final int countStuff;
     public Manager(String name, int age, String sex, double salaryInDay, int countStuff) {
         super(name, age, sex, salaryInDay);
@@ -14,6 +14,7 @@ public class Manager extends Employee {
         return countStuff;
     }
 
+    @Override
     public double getSalary(Month[] monthArray) {
         double totalSalary = 0;
         for (Month month : monthArray) {
